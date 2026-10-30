@@ -1,0 +1,19 @@
+{
+  "name": "skillsharingalt",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SkillLoop 换技 — 时间信用制技能互换平台（Cloudflare Workers + D1 + 原生 SPA）",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply skillloop-db --remote",
+    "db:migrate:local": "wrangler d1 migrations apply skillloop-db --local",
+    "seed": "node scripts/seed-demo.js",
+    "db:migrate:demo:local": "wrangler d1 migrations apply DEMO_DB --local",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.154.0"
+  }
+}

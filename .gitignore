@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.xdg/
+.wrangler-home/
+.qa/
+.DS_Store
+research/
+
+# 本地/内部资料，不随开源发布
+docs/
+.commandcode/
